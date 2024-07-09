@@ -1,0 +1,8 @@
+name: test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and run tests
+        run: mvn test
